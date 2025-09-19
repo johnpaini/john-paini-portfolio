@@ -5,9 +5,3 @@ document.querySelectorAll('nav a').forEach(link => {
     target.scrollIntoView({ behavior: 'smooth' });
   });
 });
-
-document.getElementById('contact-form').addEventListener('submit', function(e){
-  e.preventDefault();
-  alert('Mensagem enviada! (funcionalidade de backend não implementada neste protótipo)');
-  this.reset();
-});
