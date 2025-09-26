@@ -1,7 +1,7 @@
 export const profile = {
     name: "John Paini",
     title: "Scrum Master | Agile Coach | Product Manager",
-    photo: "/src/assets/profile.jpg",
+    photo: "./src/assets/profile.jpg",
     email: "johnpaini@gmail.com",
     phone: "(67)998026818",
     linkedin: "https://www.linkedin.com/in/john-paini-b05183a5/",
