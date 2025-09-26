@@ -1,0 +1,25 @@
+.keywords-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+    justify-content: center;
+}
+
+.keyword-badge {
+    background-color: #0070f3;
+    /* cor principal */
+    color: #fff;
+    padding: 0.4rem 1rem;
+    border-radius: 9999px;
+    /* deixa bem arredondado */
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: default;
+}
+
+.keyword-badge:hover {
+    background-color: #0059c9;
+    transform: translateY(-2px);
+}

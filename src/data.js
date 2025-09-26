@@ -19,6 +19,9 @@ sustentáveis e inovação contínua. `;
 
 export const skills = ["Scrum", "Kanban", "Lean TI", "Gestão de equipes ágeis", "Project Manager", "Product Manager", "Metodologias Ágeis"];
 
+
+export const keywords = ["Scrum", "Kanban", "Lean TI", "Gestão de equipes ágeis", "Project Manager", "Product Manager", "Metodologias Ágeis"];
+
 export const experiences = [
     {
         company: "JP TECH Consultoria e Desenvolvimento de Software",
