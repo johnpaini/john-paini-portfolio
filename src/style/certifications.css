@@ -2,24 +2,24 @@
     padding: 2rem;
     background-color: #f5f6fa;
     border-radius: 12px;
-    margin: 2rem 0;
+    margin: 2rem auto;
+    max-width: 1200px;
+    /* limita largura geral */
 }
 
 .certifications-section h2 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
-    color: #222;
+    color: #0d47a1;
     text-align: center;
 }
 
 .cert-cards-container {
     display: flex;
-    /* usar flexbox para centralizar */
     flex-wrap: wrap;
-    /* permitir quebra de linha */
     justify-content: center;
     /* centraliza horizontalmente */
-    gap: 1rem;
+    gap: 1.5rem;
     /* espaçamento entre cards */
 }
 
@@ -29,7 +29,18 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 1 1 320px;
+    /* aumenta a largura base */
+    max-width: 360px;
+    /* aumenta o limite máximo */
+    margin: 0 auto;
+    /* centraliza quando quebrar linha */
+    word-wrap: break-word;
+    /* garante quebra de palavras longas */
+    padding: 1rem;
+    /* adiciona padding interno para o texto não encostar nas bordas */
 }
+
 
 .cert-card:hover {
     transform: translateY(-5px);
@@ -39,22 +50,25 @@
 .cert-card-header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     cursor: pointer;
-    padding: 1rem;
+    padding: 1rem 1.2rem;
     background-color: #0070f3;
     color: #fff;
-    justify-content: space-between;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .cert-icon {
     margin-right: 0.5rem;
+    flex-shrink: 0;
 }
 
 .cert-items {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease;
-    list-style: disc;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+    list-style: disc inside;
     padding: 0 1rem;
     background-color: #f9f9f9;
 }
@@ -62,9 +76,12 @@
 .cert-items.expanded {
     max-height: 1000px;
     /* permite expandir todo o conteúdo */
-    padding: 1rem;
+    padding: 1rem 1.2rem;
+    /* padding visível só quando expandido */
 }
 
 .cert-items li {
     margin-bottom: 0.5rem;
+    color: #333;
+    line-height: 1.4;
 }

@@ -173,5 +173,28 @@ export const specificSkills = [
             "Insomnia",
             "Integração com PIN PAD"
         ]
+    },
+    {
+        title: "Inteligência Artificial (IA)",
+        category: "IA",
+        items: [
+            "Machine Learning",
+            "Deep Learning",
+            "NLP",
+            "Data Analytics",
+            "Modelos Preditivos",
+            "Algoritmos Inteligentes"
+        ]
+    },
+    {
+        title: "Automação de Tarefas",
+        category: "Automação ",
+        items: [
+            "RPA",
+            "Scripts e Bots",
+            "Pipelines CI/CD",
+            "Integração de Sistemas",
+            "Monitoramento Automatizado"
+        ]
     }
 ];
